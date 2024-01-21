@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(17, 27, 33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-flexbox {
+  display: flex;
+  background-color: white;
+  width: 1600px;
+  height: calc(100vh - 40px);
+  min-width: 1px;
+}

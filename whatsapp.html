@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whatsapp web</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/left-sidebar.css" />
+    <link rel="stylesheet" href="css/right-sidebar.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container-flexbox">
+      <div class="left-sidebar">
+        <div class="header">
+          <div><img class="profile-pic" src="images/profilepic.jpg" /></div>
+
+          <div class="icons">
+            <div class="icon-pic-div">
+              <ion-icon name="people-outline"></ion-icon>
+              <div class="tooltip">Communities</div>
+            </div>
+            <div class="icon-pic-div">
+              <ion-icon name="sync-circle-outline"></ion-icon>
+              <div class="tooltip">Status</div>
+            </div>
+
+            <div class="icon-pic-div">
+              <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              <div class="tooltip">New chat</div>
+            </div>
+            <div class="icon-pic-div">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              <div class="tooltip">Menu</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-flexbox">
+          <div class="search-div">
+            <button class="search-button">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <input
+              class="searchbar"
+              type="search "
+              placeholder="Search or start new chat "
+            />
+          </div>
+          <div class="filter">
+            <ion-icon name="filter-outline"></ion-icon>
+            <div class="tooltip">Unread chat filter</div>
+          </div>
+        </div>
+
+        <div class="message-list">
+          <!-- documents chatbox -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <ion-icon
+                  style="font-size: 20px"
+                  name="checkmark-done-outline"
+                ></ion-icon>
+                <img
+                  class="chatbox-icon"
+                  style="top: 0px"
+                  src="images/document.png"
+                  alt=""
+                />
+
+                <div><p>english.doc</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- reciever chat box  -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message"><p>yes</p></div>
+            </div>
+          </div>
+
+          <!-- missed call chatbox -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <img
+                  class="chatbox-icon"
+                  style="position: relative; top: -2px"
+                  src="images/missed-call-removebg-preview.png"
+                  alt=""
+                />
+
+                <div><p>english.doc</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- photo chat box  -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <ion-icon class="chatbox-icon" name="camera-outline"></ion-icon>
+
+                <div><p>Photo</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- reciever chat box  -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message"><p>yes</p></div>
+            </div>
+          </div>
+
+          <!-- send chatbox -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <ion-icon
+                  style="font-size: 20px"
+                  name="checkmark-done-outline"
+                ></ion-icon>
+
+                <div><p>english.doc</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- reciever chat box  -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message"><p>yes</p></div>
+            </div>
+          </div>
+
+          <!-- missed call chatbox -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <img
+                  class="chatbox-icon"
+                  style="position: relative; top: -2px"
+                  src="images/missed-call-removebg-preview.png"
+                  alt=""
+                />
+
+                <div><p>english.doc</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- documents chatbox -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <ion-icon
+                  style="font-size: 20px"
+                  name="checkmark-done-outline"
+                ></ion-icon>
+                <img
+                  class="chatbox-icon"
+                  style="top: 0px"
+                  src="images/document.png"
+                  alt=""
+                />
+
+                <div><p>english.doc</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- photo chat box  -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <ion-icon class="chatbox-icon" name="camera-outline"></ion-icon>
+
+                <div><p>Photo</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- send chatbox -->
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <ion-icon
+                  style="font-size: 20px"
+                  name="checkmark-done-outline"
+                ></ion-icon>
+
+                <div><p>english.doc</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-box">
+            <div class="person-pic">
+              <img
+                class="person-profile-pic"
+                src="images/profilepic.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="chatbox-right-div">
+              <div class="info">
+                <p>Zohaib (you)</p>
+
+                <div class="date">23/03/2023</div>
+              </div>
+
+              <div class="message">
+                <ion-icon
+                  style="font-size: 20px"
+                  name="checkmark-done-outline"
+                ></ion-icon>
+
+                <div><p>english.doc</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-sidebar">
+        <div class="active-inbox-header">
+          <div class="leftside">
+            <div class="profile-pic-person">
+              <img
+                class="person-profile-pic"
+                style="width: 40px; height: 40px"
+                src="images/profilepic.jpg"
+              />
+              <div class="tooltip">Profile Details</div>
+            </div>
+            <div style="margin-left: 14px"><strong>Zohaib</strong></div>
+          </div>
+
+          <div class="rightside">
+            <div class="tooltip-icon">
+              <ion-icon name="search-outline"></ion-icon>
+              <div class="tooltip">Search</div>
+            </div>
+
+            <div class="tooltip-icon">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              <div class="tooltip">Menu</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat">
+          <div class="person-chat">
+            <div class="friendmsg">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis voluptates cum in nostrum quo dignissimos accusamus
+                ullam minima nihil magnam, accusantium, neque adipisci veritatis
+                recusandae similique n gfgfgfdgfdfdsfsdfsdffdsfdsulla, quasi
+                placeat porro. <br />
+                <span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="friendmsg">
+              <p>
+                hi
+                <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="my-message">
+              <p>
+                Flowers are so beautiful as you. Why? Because a butterfly can go
+                after it. Frui t are as sweet as you. Why? Because birds can go
+                after it. Fruit are as sweet as you. Why? Because can go after
+                it. So why shouldn't I? Let me be your valentine!
+                <br />
+                <span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="my-message">
+              <p>
+                hi
+                <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="friendmsg">
+              <p>
+                Happy days are 2 stay foreverJust because you are togetherAnd
+                brighter days are yet 2 comeFilled with laughter and fun.
+                <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="my-message">
+              <p>
+                Curls of your silky hair and curves of your dressing pair,
+                simply irrestible!
+                <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="friendmsg">
+              <p>
+                nice.
+                <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="my-message">
+              <p>
+                No life ever grows great until it isfocused, dedicated, and .But
+                no life is ever happy untilit is lived for the glory of God.Keep
+                the faith. <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="friendmsg">
+              <p>
+                I can appreciate coffee without cream, overtime without pay,
+                nights without lights, meals without rice, hamburger without
+                cheese, but never a whole day without greeting you.
+                <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="my-message">
+              <p>
+                No life ever grows great until it isfocused, dedicated, and .But
+                no life is ever happy untilit is lived for the glory of God.Keep
+                the faith. <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+
+            <div class="friendmsg">
+              <p>
+                I can appreciate coffee without cream, overtime without pay,
+                nights without lights, meals without rice, hamburger without
+                cheese, but never a whole day without greeting you.
+                <br /><span class="times">6:32 Pm</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="bottom-header">
+            <div class="icon-bottom-header">
+              <ion-icon name="happy-outline"></ion-icon>
+              <ion-icon name="attach-outline"></ion-icon>
+            </div>
+
+            <div class="searchbar-bottom-head">
+              <input
+                class="searchbar-bottom-header"
+                type="text "
+                placeholder="Type a message"
+              />
+            </div>
+
+            <div class="icon-bottom-header" style="width: 50px">
+              <ion-icon name="mic-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
